@@ -75,12 +75,12 @@ while zz == 'y';
                 else:
                     print('NON DIABETIC')
             c = input("Enter y to go back to Senior Citizens' page")
-            elif ch2==2:
+            elif ch2 == 2:
                 print()
                 df=pd.read_csv('C:\\Users\\krish\\OneDrive\\Documents\\csvfile.csv')
                 print("OUR DOCTORS LIST:")
                 print(df)
-            elif ch2==3:
+            elif ch2 == 3:
                 cc = 'y'
                 print("SELECTED:NUTRITON AND DIET")
                 print()
@@ -327,7 +327,7 @@ while zz == 'y';
         print ('sending help')
         print('ONE OF THE BELOW AMBULANCE WILL BE AT YOUR LOCATION IN 10 MIN')
         print(df2)
-    elif ch1==4:
+    elif ch1 == 4 :
         print('HEALTH STATUS')
         s = ['Diabetics','Blood Pressure','Prior Heart Diseases']
         for i in s:
