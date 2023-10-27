@@ -98,6 +98,7 @@ while zz == 'y':
                         print("INCLUDE:TOMATOES,BROCCOLI,BEANS,ORANGES")
                         print()
                         print("FOR MORE  ASSISTANCE CONTACT OUR TEAM")
+                        cc = input("Enter y to check other diets")
                     elif ch3==2:
                         print('You have Diabetes')
                         print()
@@ -108,6 +109,7 @@ while zz == 'y':
                         print("INCLUDE : BEANS , NUTS , WHOLEGRAINS ,BERRIES")
                         print()
                         print("FOR MORE  ASSISTANCE CONTACT OUR TEAM")
+                        cc = input("Enter y to check other diets")
                     elif ch3==3:
                         print('You have Blood pressure issue ')
                         print()
@@ -118,6 +120,7 @@ while zz == 'y':
                         print('INCLUDE : OLIVE OIL , CITRUS FRUITS , BERRIES , NUTS , SEEDS')
                         print()
                         print("FOR MORE  ASSISTANCE CONTACT OUR TEAM")
+                        cc = input("Enter y to check other diets")
                     elif ch3==4:
                         print("HEALTHY DIET")
                         print()
@@ -126,9 +129,10 @@ while zz == 'y':
                         print("AVOID : FRIED FOOD , JUNK FOOD ")
                         print()
                         print("FOR MORE  ASSISTANCE CONTACT OUR TEAM")
+                        cc = input("Enter y to check other diets")
                     else:
                         print('ERROR')
-                    cc = input("Enter y to check other diets")
+                        cc = input("Enter y to check other diets")
                 c = input("Enter y to go back to Senior Citizens' page")
             elif ch2==4:
                 print("REMINDER")
@@ -372,7 +376,7 @@ while zz == 'y':
         print('HEALTH STATUS')
         s = ['Diabetics','Blood Pressure','Prior Heart Diseases']
         for i in s:
-            x = input("Are/were you diagnosed with",i,"? :")
+            x = input("Are/were you diagnosed with",i,"? :" )
             if x == 'y' or 'Y':
                 z.append(i)
             else:
