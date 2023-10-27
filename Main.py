@@ -3,17 +3,13 @@ import numpy as np
 import matplotlib.pyplot as pl
 import datetime as dt
 from playsound import playsound as ps
-
-
 # CODE TO GET CURRENT TIME
 #print(dt.datetime.now())
-
 print("WELCOME TO WebDoc")
 
 user_name = str(input('Enter your Name'))
 user_loc = str(input('Enter your complete adress in 3 lines '))
 user_no = str(input('Enter your mobile no.'))
-
 
 if user_name is None:
     print("INVALID")
@@ -319,7 +315,7 @@ while zz == 'y':
                 c = input("Enter y to go back to Senior Citizens' page")
             else:
                 exit
-            zz = input("Enter y to continue:")
+        zz = input("Enter y to continue:")
     elif ch1 == 2:
         import matplotlib.pyplot as pl
         print("Hello ! How has your Day been?")
@@ -363,7 +359,7 @@ while zz == 'y':
         pl.show()
 
         #if a == 2:
-
+        zz = input("Enter y to continue:")
     elif ch1==5:
         loc = user_loc
         df2=pd.read_csv('C:\\Users\\krish\\OneDrive\\Documents\\ambulan.csv')
@@ -371,6 +367,7 @@ while zz == 'y':
         print('sending help')
         print('ONE OF THE BELOW AMBULANCE WILL BE AT YOUR LOCATION IN 10 MIN')
         print(df2)
+        zz = input("Enter y to continue:")
     elif ch1 == 4:
         print('HEALTH STATUS')
         s = ['Diabetics','Blood Pressure','Prior Heart Diseases']
