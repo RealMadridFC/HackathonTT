@@ -374,12 +374,59 @@ while zz == 'y':
         zz = input("Enter y to continue:")
     elif ch1 == 4:
         print('HEALTH STATUS')
-        s = ['Diabetics','Blood Pressure','Prior Heart Diseases']
-        for i in s:
-            x = input("Are/were you diagnosed with",i,"? :" )
-            if x == 'y' or 'Y':
-                z.append(i)
-            else:
-                break
+        print()
+        print("Are you diabetic")
+        d_a = input("yes/no: ")
+        if d_a =="yes":
+            print("AS ANSWERED YOU ARE DIABETIC")
+            print()
+            print('Are you victim of high BP?')
+            b_a = input("yes/no: ")
+            if b_a=="yes":
+                print('DIABETIES AND BP PATIENT')
+                print()
+                print("Are you suffering from any heart diseases")
+                h_a = input("yes/no: ")
+                if h_a == "yes":
+                    print ('YOU ARE AT VERY CRITICAL STAGE')
+                    #readcsv doctors
+                elif h_a =="no":
+                    print("You are at borderline of critical stage")
+                    print('SUGGESTED : VISIT DOCTORS ')
+                else:
+                    print("ERROR")
+            if b_a=="no":
+                print("are you having any heart related problem")
+                h_a2 = input("yes/no: ")
+                if h_a2 =="yes":
+                    print('SUFFERING: DIABITIES AND HEALTH DISEASES')
+                    print('SUGGESTED : VISIT DOCTORS ')
+                elif h_a2=="no":
+                    print("OUT OF DANGER BUT CONTROL GLUCOSE LEVELS")
+        elif d_a == "no":
+            print('Are you victim of high BP')
+            b_a = input("yes/no: ")
+            if b_a=="yes":
+                print('DIABETIES AND BP PATIENT')
+                print()
+                print("Are you suffering from any heart diseases")
+                h_a = input("yes/no: ")
+                if h_a == "yes":
+                    print ('YOU ARE AT VERY CRITICAL STAGE')
+                    #readcsv doctors
+                if h_a =="no":
+                    print("You are at borderline of critical stage")
+                    print('SUGGESTED : VISIT DOCTORS ')
+                else:
+                    print("ERROR")
+            if b_a=="no":
+                print("are you having any heart related problem")
+                h_a2 = input("yes/no: ")
+                if h_a2 =="yes":
+                    print('SUFFERING: DIABITIES AND HEALTH DISEASES')
+                    print('SUGGESTED : VISIT DOCTORS ')
+                elif h_a2=="no":
+                    print("OUT OF DANGER BUT CONTROL GLUCOSE LEVELS")
+
 
 
