@@ -10,7 +10,6 @@ from playsound import playsound as ps
 
 print("WELCOME TO WebDoc")
 
-
 user_name = str(input('Enter your Name'))
 user_loc = str(input('Enter your complete adress in 3 lines '))
 user_no = str(input('Enter your mobile no.'))
