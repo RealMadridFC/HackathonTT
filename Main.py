@@ -427,6 +427,6 @@ while zz == 'y':
                     print('SUGGESTED : VISIT DOCTORS ')
                 elif h_a2=="no":
                     print("OUT OF DANGER BUT CONTROL GLUCOSE LEVELS")
-
+#hii
 
 
