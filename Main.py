@@ -609,6 +609,10 @@ while zz == 'yes':
             aaa = int(input("Enter 0 to go back to Teen health page:"))
             if aaa != 0:
                 zz = input("Enter yes to go back to main page:")
+      if ch1==6:
+        print("WEBSITE LINK")
+        webbrowser.open("C:/Users/krish/Downloads/sharedrop-2023-10-28-06_26_46/Home.html")
+        zz = input("Enter yes to go to main page:")
         else :
             print("Error")
             aaa = int(input("Enter 0 to go back to Teen health page:"))
