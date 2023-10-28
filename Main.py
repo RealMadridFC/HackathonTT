@@ -80,7 +80,7 @@ while zz == 'yes':
                 df=pd.read_csv('csvfile.csv')
                 print("OUR DOCTORS LIST:")
                 print(df)
-                c = int(input("Enter y to go back to Senior Citizens' page"))
+                c = int(input("Enter 1 to go back to Senior Citizens' page"))
                 if c!=1:
                     zz = input("Enter yes to go to Main page:")
             elif ch2 == 3:
@@ -341,7 +341,7 @@ while zz == 'yes':
                                 exit
                 else:
                     exit
-                c = int(input("Enter y to go back to Senior Citizens' page"))
+                c = int(input("Enter 1 to go back to Senior Citizens' page"))
             else:
                 exit
         zz = input("Enter yes to go to main page:")
