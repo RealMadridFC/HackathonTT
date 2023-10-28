@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+.js {
+    width: 100%;
+    
+}
+* {
+    font-family: 'Archivo';
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+.tab {
+    width: 100%;
+    background-color: #1e1f23;
+    height: 27px;
+    line-height: 27px;
+    padding-left: 20px;
+    text-align: center;
+}
+.js-included {
+    background-color: #323338;
+    overflow-x: hidden;
+    text-align: center;
+}
+.tab a {
+    float: right;
+    margin-right: 40px;
+    text-decoration: none;
+}
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    font-family: sans-serif;
+  }
+  
+  .tabs__label {
+    width: 300px;
+    float: left;
+    padding: 10px 16px;
+    cursor: pointer;
+  }
+  
+  .tabs__radio {
+    display: none;
+  }
+  
+  .tabs__content {
+    order: 1;
+    width: 80%;
+    margin: auto;
+    background-color: #1e1f23;
+    line-height: 1.5;
+    height: 670px;
+    padding: 0 20px 0 20px;
+    font-size: 0.9em;
+    display: none;
+  }
+  
+  .tabs__radio:checked + .tabs__label {
+    font-weight: bold;
+    color: #000000;
+    background-color: #009578;
+  }
+  
+  .tabs__radio:checked + .tabs__label + .tabs__content {
+    display: initial;
+  }
+  .vaccinetable table tr th {
+    border: 1px solid #6e6e6e;
+    width: 250px;
+    height: 40px;
+  }
+  .vaccinetable table tr th input {
+    width: 30px;
+    height: 30px;
+  }
+  #submitvaccine {
+    width: 300px;
+    height: 35px;
+    background-image: radial-gradient(rgb(0, 42, 80),blue);
+    color: #ffffff;
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+  }
+  .nutrtable table {
+    margin: auto;
+  }
+  .nutrtable table tr th {
+    width: 400px;
+    height: 40px;
+    text-align: left;
+    border: 1px solid none;
+    font-size: 16px;
+    background-image: radial-gradient(#333,#1e1f23);
+    padding: 10px;
+  }
+  .nutrtable table tr th ul {
+    margin-left: 20px;
+    margin-top: 30px;
+    
+  }
+  .tip {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    background-color: #323338;
+  }
+  #tiplabel {
+    float: left;
+  }
+  #tiplabel:first-child {
+    background-color: yellow;
+    color: black;
+    height: 30px;
+    width: 30px;
+  }
+  #tiplabel:nth-child(2) {
+    margin-left: 30px;
+  }
+  .doctortable table tr th {
+    width: 400px;
+    height: 30px;
+    padding: 15px;
+  }
+  .doctortable table tr:first-child th {
+    background-color: #333;
+  }
+  .questiontable table tr th {
+    width: 600px;
+    height: 30px;
+    padding: 20px;
+    text-align: right;
+  }
+  .questiontable table tr th:nth-child(2) {
+    text-align: left;
+  }
+  .answerteen {
+    width: 400px;
+    padding: 10px;
+    font-size: 17px;
+    background-color: #000;
+  }
+  .teenresult {
+    background-color: #0d0e10;
+    width: 60%;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    font-size: 22px;
+  }
+  #getres {
+    background-color: blue;
+    padding: 5px;
+    width: 200px;
+    color: white;
+  }

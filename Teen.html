@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html itemscope itemtype="https://schema.org/WebPage" dir="ltr" class="js">
+
+    <head>
+        <title name="TabName #WebDoc">WebDoc - Adolescence Virtual Clinic</title>
+
+        <link rel="stylesheet" type="text/css" href="./common.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image" href="https://static.vecteezy.com/system/resources/previews/009/362/747/original/simple-medical-icon-symbol-sign-design-free-png.png">
+
+    </head>
+
+<body name="content area" visible dir="ltr" class="js-included">
+
+    <div class="tab">
+        <span>WebDoc - Adolescence Virtual Clinic</span>
+        <a href="./Home.html">Home</a>
+    </div>
+
+    <div class="content">
+
+        <div class="tabs">
+            <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
+            <label for="tab1" class="tabs__label">Stress Level</label>
+            <div class="tabs__content"> <br>
+              <h1>Stress Level</h1> <br>
+              <h4>Thank you for choosing WebDoc as your health mentor. Most teens nowadays suffer from stress either due to peer pressure or due to <br>
+                pressure from studies etc. This is really worrying, especially for those teens with less tolerance. Therefore, attend the stress test as follows:
+               <br> <br>
+               <h3>Please answer the following questions honestly. Note that this information is used only for medical purposes and can only be handled by professional medics.</h3>
+                <h5>Please Answer: NEVER::1, SOMETIMES::2, REGULARLY::3, FREQUENTLY::4, ALWAYS::5 </th></h5>
+                <div class="questiontable">
+                    <table>
+                        <tr>
+                            <th>Q1: Do you have trouble staying at the present moment? </th>
+                            <th>
+                                <input type="number" class="answerteen" id="tq1">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Q2: Do you have trouble falling asleep? </th>
+                            <th>
+                                <input type="number" class="answerteen" id="tq2">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Q3: Do you often experience headache/muscle tension?</th>
+                            <th>
+                                <input type="number" class="answerteen" id="tq3">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Q4: Do you have trouble concentration on your tasks?</th>
+                            <th>
+                                <input type="number" class="answerteen" id="tq4">
+                            </th>
+                        </tr>
+                    </table>
+                    <br>
+                    <button id="getres" class="btnres" onclick="Sum()">Calculate Stress</button>
+                </div>
+                <div class="teenresult" id="teenresult">
+                    <div id="tresult"> Your Stress will be shown in this box </div><br> 
+                    <span>Go to the next tab to check the results.</span>
+                </div>
+
+                <script>
+                    function Sum() {
+                    var num1 = parseFloat(document.getElementById('tq1').value);
+                    var num2 = parseFloat(document.getElementById('tq2').value);
+                    var num3 = parseFloat(document.getElementById('tq3').value);
+                    var num4 = parseFloat(document.getElementById('tq4').value);
+
+                    x = document.getElementById('getres');
+
+                    if (!isNaN(num1) && !isNaN(num2) && !isNaN(num3) && !isNaN(num4)) {
+                    var sum = num1 + num2 + num3 + num4;
+
+                    document.getElementById('tresult').textContent = sum;
+                    
+                    } 
+                    else {
+                    document.getElementById('tresult').textContent = 'Please enter valid numbers';
+                  }
+                    }
+                </script>
+
+
+            </div>
+            <input type="radio" class="tabs__radio" name="tabs-example" id="tab2"> 
+            <label for="tab2" class="tabs__label">Nutrition & Stress</label>
+            <div class="tabs__content"> <br>
+              <h1>Nutrition and Stress Results</h1> <br>
+              <h4>If you are suffering from stress without eating enough food, your body will start dying. So <br>
+                some Nutrition plans suggested here will be beneficial for your health. It can also start lowering your stress significantly.</h4>
+              <br>
+              <div class="nutrtable">
+                <table>
+                  <tr>
+                    <th>What is your result</th>
+                    <th>What it means</th>                    
+                  </tr>
+                  <tr>
+                    <th>Less Stress (0-6)</th>
+                    <th>Though low levels of stress are healthy, a little stress may have driven in your life. Nevertheless, you are leading a healthy period of your life!</th>
+                  </tr>       
+                  <tr>
+                    <th>Moderate Stress (7-15)</th>
+                    <th>You are facing moderate level stress. Not healthy, and not that bad either. Still you will need to take care of your health.</th>
+                  </tr>
+                  <tr>
+                    <th>High Level Stress (16-20)</th>
+                    <th>You are facing very high levels of stress which is very dangerous for the young minds. Please consult a doctor immediately. To do so, head over to 'Consult a Doctor' in the next tab.</th>
+                  </tr>         
+                </table>
+              </div>
+              <div class="tip">
+                <div id="tiplabel">Tip</div>
+                <div id="tiplabel">
+                  In order to take the test, please head over to Tab 1 of this webpage and start reducing your stress!
+                </div>
+              </div>
+            </div>
+            <input type="radio" class="tabs__radio" name="tabs-example" id="tab3">
+            <label for="tab3" class="tabs__label">Consult a Doctor</label>
+            <div class="tabs__content"> <br>
+              <h1>Consult a Doctor</h1> <br>
+              <h4>For any other emergency of a higher order, please consult a doctor immediately. Based on the <br>
+              problem which is being faced, Phone numbers of WebDoc's trusted doctors along with their fields of expertise are respectively given as follows:</h4>              
+              <div class="doctortable">
+                <br>
+                <table>
+                  <tr>
+                    <th>Field of Expertise</th>
+                    <th>Doctor Name</th>
+                    <th>Phone Number</th>
+                  </tr>
+                  <tr>
+                    <th>Peadiatrics</th>
+                    <th>Dr. Aaditya</th>
+                    <th>9876213401</th>               
+                  </tr>
+                  <tr>
+                    <th>Cardio</th>
+                    <th>Dr. Anand</th>
+                    <th>9083579458</th>
+                  </tr>
+                  <tr>
+                    <th>ENT</th>
+                    <th>Dr. Saamya</th>
+                    <th>9083579458</th>
+                  </tr>
+                  <tr>
+                    <th>Dental</th>
+                    <th>Dr. Mohit</th>
+                    <th>8097389047</th>
+                  </tr>
+                  <tr>
+                    <th>General</th>
+                    <th>Dr. Zishan</th>
+                    <th>9201935890</th>
+                  </tr>
+                  <tr>
+                    <th>Homeo</th>
+                    <th>Dr. Aditi</th>
+                    <th>9297482074</th>
+                  </tr>
+                  <tr>
+                    <th>Vaccination</th>
+                    <th>Dr. Abhinav</th>
+                    <th>8838743917</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            
+           
+          </div>
+
+    </div>
