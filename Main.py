@@ -120,6 +120,7 @@ while zz == 'yes':
                         print("INCLUDE : BEANS , NUTS , WHOLEGRAINS ,BERRIES")
                         print()
                         print("FOR MORE  ASSISTANCE CONTACT OUR TEAM")
+                        cc = input("Enter y to check other diets")
                         if cc != 'y':
                             c = int(input("Enter 1 to go back to Senior Citizens' page:"))
                             if c != 1:
@@ -544,31 +545,30 @@ while zz == 'yes':
                 if aa <= 10:
                     print("You have LOW levels of stress")
                     if 1 <= aa <= 6:
-                        print(
-                            "Though Low levels are healthy and compromising, a little stress is required to have you driven in your life.")
-            xx = [(aa * 10 / 3), 100]
-            pl.pie(xx, labels=["Your stress", "Total"])
-            pl.show()
-            aaa = int(input("Enter 0 to go back to Teen health page:"))
-            if aaa != 0:
-                zz = input("Enter yes to go back to main page:")
-        if a == 2:
-            print("The harsh truth is that Teens tend to eat more and more junk rather healthy food.\nThis can lead to high risk of health issues.")
-            print("To support your energy levels:\n1.Eat more grains rich in carbohydrates and proteins\n2.Eat more fibre\n3.A small cheat meal is healthy too!!")
-            aaa = int(input("Enter 0 to go back to Teen health page:"))
-            if aaa != 0:
-                zz = input("Enter yes to go back to main page:")
-        if a == 3:
-            print()
-            df=pd.read_csv('csvfile.csv')
-            print("OUR DOCTORS LIST:")
-            print(df)
-            aaa = int(input("Enter 0 to go back to Teen health page:"))
-            if aaa != 0:
-                zz = input("Enter yes to go back to main page:")
-        else :
-            print("Error")
-            aaa = int(input("Enter 0 to go back to Teen health page:"))
-            if aaa != 0:
-                zz = input("Enter yes to go back to main page:")
+                        print("Though Low levels are healthy and compromising, a little stress is required to have you driven in your life.")
+                xx = [(aa * 10 / 3), 100]
+                pl.pie(xx, labels=["Your stress", "Total"])
+                pl.show()
+                aaa = int(input("Enter 0 to go back to Teen health page:"))
+                if aaa != 0:
+                    zz = input("Enter yes to go back to main page:")
+            if a == 2:
+                print("The harsh truth is that Teens tend to eat more and more junk rather healthy food.\nThis can lead to high risk of health issues.")
+                print("To support your energy levels:\n1.Eat more grains rich in carbohydrates and proteins\n2.Eat more fibre\n3.A small cheat meal is healthy too!!")
+                aaa = int(input("Enter 0 to go back to Teen health page:"))
+                if aaa != 0:
+                    zz = input("Enter yes to go back to main page:")
+            if a == 3:
+                print()
+                df=pd.read_csv('csvfile.csv')
+                print("OUR DOCTORS LIST:")
+                print(df)
+                aaa = int(input("Enter 0 to go back to Teen health page:"))
+                if aaa != 0:
+                    zz = input("Enter yes to go back to main page:")
+            else :
+                print("Error")
+                aaa = int(input("Enter 0 to go back to Teen health page:"))
+                if aaa != 0:
+                    zz = input("Enter yes to go back to main page:")
 print("Thank you for Using WebDoc!!")
