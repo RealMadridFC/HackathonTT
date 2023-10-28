@@ -568,7 +568,7 @@ while zz == 'yes':
                     zz = input("Enter yes to go back to main page:")
             else :
                 print("Error")
-                aaa = int(input("Enter 0 to go back to Teen health page:"))
-                if aaa != 0:
-                    zz = input("Enter yes to go back to main page:")
+            aaa = int(input("Enter 0 to go back to Teen health page:"))
+            if aaa != 0:
+                zz = input("Enter yes to go back to main page:")
 print("Thank you for Using WebDoc!!")
