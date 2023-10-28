@@ -2,14 +2,16 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as pl
 import datetime as dt
-#from playsound import playsound as ps
+from playsound import playsound as ps
+import webbrowser
+
 # CODE TO GET CURRENT TIME
 #print(dt.datetime.now())
 print("WELCOME TO WebDoc")
 
 user_name = str(input('Enter your Name'))
 user_loc = str(input('Enter your complete adress in 3 lines '))
-user_no = str(input('Enter your mobile no.'))
+user_no = int(input('Enter your mobile no.'))
 
 if user_name is None:
     print("INVALID")
@@ -28,6 +30,7 @@ while zz == 'y':
     print("3. CHILDCARE")
     print("4. HEALTH STATUS")
     print("5. AMBULANCE")
+    print("6.WEBSITE")
     ch1 = int(input('Select option according your requirement'))
     if ch1==1:
         c = 'y'
@@ -78,16 +81,16 @@ while zz == 'y':
                 c = input("Enter y to go back to Senior Citizens' page")
             elif ch2 == 3:
                 cc = 'y'
+                print("SELECTED:NUTRITON AND DIET")
+                print()
+                print("SELECT YOUR CONDITION")
+                print()
+                print("1.BP and Diabetes")
+                print("2.Diabetes")
+                print('3.BP')
+                print("4.NOTHING JUST NEED HEALTHY DIET")
+                ch3=int(input("SELECT:"))
                 while cc == 'y':
-                    print("SELECTED:NUTRITON AND DIET")
-                    print()
-                    print("SELECT YOUR CONDITION")
-                    print()
-                    print("1.BP and Diabetes")
-                    print("2.Diabetes")
-                    print('3.BP')
-                    print("4.NOTHING JUST NEED HEALTHY DIET")
-                    ch3 = int(input("SELECT:"))
                     if ch3==1:
                         print('You have BP and Diabetes')
                         print()
@@ -362,8 +365,15 @@ while zz == 'y':
         pl.pie(xx, labels=["Your stress", "Total"])
         pl.show()
 
-        #if a == 2:
-        zz = input("Enter y to continue:")
+
+
+
+
+
+
+
+
+
     elif ch1==5:
         loc = user_loc
         df2=pd.read_csv('C:\\Users\\krish\\OneDrive\\Documents\\ambulan.csv')
@@ -427,6 +437,121 @@ while zz == 'y':
                     print('SUGGESTED : VISIT DOCTORS ')
                 elif h_a2=="no":
                     print("OUT OF DANGER BUT CONTROL GLUCOSE LEVELS")
-#hii
+    elif ch1==3:
+        print("CHILD CARE ")
+        print()
+        print("1.VACINATION")
+        print("2.NUTRITION/DIET")
+        print("3.DOCTOR")
+        ch4=int(input('ENTER OPTION'))
+        if ch4==1:
+            print("VACINATION")
+            print()
+            print('Have your child polio vaccine completed?')
+            p_ans = input("yes/no: ")
+            if p_ans =="yes":
+                print('IS your child tetanus vaccination completed?')
+                t_ans = input("yes/no: ")
+                if t_ans == "yes":
+                    print("Is your child measles vaccination done?")
+                    m_ans = input("yes/no: ")
+                    if m_ans =="yes" :
+                        print("YOUR CHILD IS SAFE AS HIS VACINATION IS COMPLETED")
+                    elif m_ans=="no":
+                        print("2 out of 3 done \n complete others asap \n doctors list:")
+                        df3=pd.read_csv("C:\\Users\\krish\\OneDrive\\Documents\\vaccine.csv")
+                        print(df3)
+                        #print("PLEASE TRY AGAIN LATER")
+                    else:
+                        print('TRY AGAIN LATER')
+                elif t_ans=="no":
+                    print("Is your child measles vaccination done?")
+                    m_ans = input("yes/no: ")
+                    if m_ans =="yes" :
+                        print("2 out of 3 Vaccines Completed \n DO COMPLETE REMAINING ASAP \n OUR DOCTORS:")
+                        df3=pd.read_csv("C:\\Users\\krish\\OneDrive\\Documents\\vaccine.csv")
+                        print(df3)
+                    elif m_ans=="no":
+                        print("ONLY 1 Completed \n complete others as soon as possible")
+                        print("DOCTORS LIST")
+                        df3=pd.read_csv("C:\\Users\\krish\\OneDrive\\Documents\\vaccine.csv")
+                        print(df3)
+            elif p_ans == "no":
+                print('IS your child tetanus vaccination completed?')
+                t_ans = input("yes/no :")
+                if t_ans == "yes":
+                    print("Is your child measles vaccination done?")
+                    m_ans = input("yes/no: ")
+                    if m_ans =="yes" :
+                        print("YOUR CHILD IS SAFE AS HIS VACINATION IS COMPLETED")
+                    elif m_ans=="no":
+                        print("2 out of 3 done")
+                        print()
+                        print("COMPLETE OTHERS ASAP \n DOctors list")
+                        df3=pd.read_csv("C:\\Users\\krish\\OneDrive\\Documents\\vaccine.csv")
+                        print(df3)
+                elif t_ans=="no":
+                    print("Is your child measles vaccination done?")
+                    m_ans = input("yes/no: ")
+                    if m_ans =="yes" :
+                        print("2 out of 3 Vaccines Completed \n DO COMPLETE REMAINING ASAP \n OUR DOCTORS:")
+                        df3=pd.read_csv("C:\\Users\\krish\\OneDrive\\Documents\\vaccine.csv")
+                        print(df3)
+                    else:
+                        print("NONE COMPLETED")
+                        print("VISIT DOCTOR ASAP")
+                        print("DOCTORS")
+                        df3=pd.read_csv("C:\\Users\\krish\\OneDrive\\Documents\\vaccine.csv")
+                        print(df3)
+        elif ch4==2:
+            print("DO YOU NEED DIET FOR your CHILD")
+            ans = input("yes/no: ")
+            if ans=="yes":
+                print("IS YOUR CHILD BETWEEN 0-2 years")
+                I_ans = input("yes/no :")
+                if I_ans == "yes":
+                    print("INFANT DIET :")
+                    print("THE BASIC FOOD THAT SHOULD BE GIVEN :\n 1.Baked apples \n 2.Tomato and Carrot puree \n 3.Green Beans and banana puree \n NOTE:Please Ensure that you give soft food ")
+                elif I_ans == "no":
+                    print("CHILD DIET FOR AGE GROUP 2-12 years")
+                    print()
+                    print("DIET:")
+                    print()
+                    print("1.MILK \n 2.WHOLE WHEAT BREAD \n 3.Berries \n 4.Green Veggies")
+            else:
+                print("Thank you")
+        elif ch4==3:
+            print("Do you need a Doc?")
+            dd_ans = input("yes/no: ")
+            if dd_ans=="yes":
+                print("DOCTORS LIST:")
+                df4=pd.read_csv("C:\\Users\\krish\\OneDrive\\Documents\\csvfile.csv")
+                print(df4)
+            else:
+                print("Try Again later")
+        else:
+
+            print("Some error occured")
+    if ch1==6:
+        #print("WEBSITE LINK")
+        webbrowser.open("http://www.google.com")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
