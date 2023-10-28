@@ -376,7 +376,8 @@ while zz == 'yes':
                 if 10 < aa < 14:
                     print("A moderate stress is required and is healthy. Maintain your stress in this level")
                 if 14 < aa < 21:
-                    print("Though your levels seem to be moderate it is very close to high levels. Adopt habits like excercise,yoga and meditation.")
+                    print(
+                        "Though your levels seem to be moderate it is very close to high levels. Adopt habits like excercise,yoga and meditation.")
             if aa <= 10:
                 print("You have LOW levels of stress")
                 if 1 <= aa <= 6:
@@ -614,4 +615,7 @@ while zz == 'yes':
             aaa = int(input("Enter 0 to go back to Teen health page:"))
             if aaa != 0:
                 zz = input("Enter yes to go back to main page:")
+    else:
+        print('ERROR OCCURED')
 print("Thank you for Using WebDoc!!")
+#OOo
