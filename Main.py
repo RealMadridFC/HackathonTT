@@ -85,16 +85,16 @@ while zz == 'yes':
                     zz = input("Enter yes to go to Main page:")
             elif ch2 == 3:
                 cc = 'y'
-                print("SELECTED:NUTRITON AND DIET")
-                print()
-                print("SELECT YOUR CONDITION")
-                print()
-                print("1.BP and Diabetes")
-                print("2.Diabetes")
-                print('3.BP')
-                print("4.NOTHING JUST NEED HEALTHY DIET")
-                ch3=int(input("SELECT:"))
                 while cc == 'y':
+                    print("SELECTED:NUTRITON AND DIET")
+                    print()
+                    print("SELECT YOUR CONDITION")
+                    print()
+                    print("1.BP and Diabetes")
+                    print("2.Diabetes")
+                    print('3.BP')
+                    print("4.NOTHING JUST NEED HEALTHY DIET")
+                    ch3 = int(input("SELECT:"))
                     if ch3==1:
                         print('You have BP and Diabetes')
                         print()
