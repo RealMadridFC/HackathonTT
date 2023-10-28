@@ -396,7 +396,7 @@ while zz == 'yes':
         print('sending help')
         print('ONE OF THE BELOW AMBULANCE WILL BE AT YOUR LOCATION IN 10 MIN')
         print(df2)
-        zz = input("Enter y to go to main page:")
+        zz = input("Enter yes to go to main page:")
     elif ch1 == 4:
         print('HEALTH STATUS')
         print()
