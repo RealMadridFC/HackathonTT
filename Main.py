@@ -581,26 +581,5 @@ while zz == 'y':
             print("OUR DOCTORS LIST:")
             print(df)
         zz = input("Enter y to continue:")
-
     else:
         print('ERROR OCCURED')
-else:
-    print("ERROR OCCURED")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
