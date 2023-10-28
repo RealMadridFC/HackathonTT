@@ -344,7 +344,7 @@ while zz == 'yes':
                 c = int(input("Enter 1 to go back to Senior Citizens' page"))
             else:
                 exit
-        zz = input("Enter yes to go to main page:")
+                zz = input("Enter yes to go to main page:")
     elif ch1==5:
         loc = user_loc
         df2=pd.read_csv('ambulan.csv')
@@ -572,4 +572,3 @@ while zz == 'yes':
             if aaa != 0:
                 zz = input("Enter yes to go back to main page:")
 print("Thank you for Using WebDoc!!")
-#
